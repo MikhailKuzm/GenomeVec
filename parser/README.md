@@ -5,7 +5,7 @@
 ## Требования
 
 1. **Python 3.8+** с пакетами из `requirements.txt`.
-2. **NCBI Datasets CLI** — официальная утилита для скачивания данных.
+2. **NCBI Datasets CLI** — официальная утилита для скачивания данных. Лежит в parser\tools.
 
 ### Установка NCBI Datasets CLI
 
@@ -54,7 +54,6 @@ python parser/run_parser.py
 
 ## Ограничения
 
-- Большие загрузки (>1000 геномов или >15 GB) лучше делать через [large download](https://www.ncbi.nlm.nih.gov/datasets/docs/v2/how-tos/genomes/large-download/) (dehydrated + rehydrate).
 - Чтобы скачать только N геномов (без полного архива), задайте в `config.yaml`: `max_genomes_to_download: 10`. Тогда сначала загружаются метаданные, затем только указанное число геномов по списку accession.
 - При полной загрузке таксона можно ограничить число копируемых FASTA: `max_genomes: 10`.
 
