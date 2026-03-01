@@ -9,13 +9,8 @@
 
 ### Установка NCBI Datasets CLI
 
-**Windows (через conda):**
-```bash
-conda install -c conda-forge ncbi-datasets-cli
-```
-
-**Или скачать бинарник (без добавления в PATH):**
-- [Releases](https://github.com/ncbi/datasets/releases) — скачайте архив для Windows, распакуйте `datasets.exe` в папку проекта (например, `parser/tools/`) и в `config.yaml` укажите: `datasets_cli_path: "parser/tools/datasets.exe"`.
+**Скачать бинарник:**
+- [Releases](https://github.com/ncbi/datasets/releases) — скачайте архив для Windows, распакуйте `datasets.exe` в  `parser/tools/` и в `config.yaml` укажите: `datasets_cli_path: "parser/tools/datasets.exe"`.
 
 Проверка:
 ```bash
