@@ -1,0 +1,37 @@
+#Файл для скачинваия геномов прокариот с NCBI Datasets: https://ftp.ncbi.nlm.nih.gov/pub/datasets/command-line/v2/win64/dataformat.exe
+
+# Путь к NCBI Datasets CLI (datasets.exe на Windows). Если не задан — ищется в PATH.
+datasets_cli_path: "parser/tools/datasets.exe"
+
+# Таксон NCBI: 2 = Bacteria (прокариоты)
+taxon_id: 2
+taxon_name: "bacteria"
+
+# Только референсные геномы
+reference_only: true
+
+# Источник сборок: RefSeq (GCF_) или GenBank (GCA_) или all
+assembly_source: "RefSeq"
+
+# Включать в пакет: genome (последовательности), none (только метаданные для превью)
+include: "genome"
+
+# Повторные попытки при обрыве (GOAWAY/таймаут). По умолчанию: 3 попытки, задержка 30 с
+# download_max_attempts: 3
+# download_retry_delay_sec: 30
+
+# Пути относительно корня проекта
+paths:
+  # Папка для скачанного архива (временная)
+  download_dir: "parser/downloads"
+  # Имя архива
+  zip_filename: "ncbi_prokaryote_reference.zip"
+  # Куда класть FASTA файлы
+  fasta_dir: "genoms/fasta"
+  # Файл статистики
+  statistic_log: "genoms/statistic.log"
+
+# Лимиты
+max_genomes_to_download: 100   # Сколько геномов скачать
+# max_genomes: 10             # сколько FASTA копировать в fasta_dir (null = все).
+# FASTA файлы сохраняются с маркировкой по фенотипу: «Организм_Accession_genomic.fna».
