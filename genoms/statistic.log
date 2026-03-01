@@ -1,0 +1,107 @@
+=== Статистика парсера референсных геномов прокариот (NCBI Datasets) ===
+
+Общее число FASTA файлов: 100
+Количество фенотипов (организмов/видов): 100
+
+--- Количество геномов по фенотипам (организмам) ---
+
+  {'taxId': 1009370, 'organismName': 'Acetonema longum DSM 6540', 'infraspecificNames': {'strain': 'DSM 6540'}}: 1
+  {'taxId': 1114962, 'organismName': 'Actinoalloteichus spitiensis RMV-1378', 'infraspecificNames': {'strain': 'RMV-1378'}}: 1
+  {'taxId': 1120917, 'organismName': 'Acaricomes phytoseiuli DSM 14247', 'infraspecificNames': {'strain': 'DSM 14247'}}: 1
+  {'taxId': 1120926, 'organismName': 'Acinetobacter gerneri DSM 14967 = CIP 107464 = MTCC 9824', 'infraspecificNames': {'strain': 'CIP 107464'}}: 1
+  {'taxId': 1120931, 'organismName': 'Actinobacillus capsulatus DSM 19761', 'infraspecificNames': {'strain': 'DSM 19761'}}: 1
+  {'taxId': 1120934, 'organismName': 'Actinokineospora enzanensis DSM 44649', 'infraspecificNames': {'strain': 'DSM 44649'}}: 1
+  {'taxId': 1120935, 'organismName': 'Actinokineospora inagensis DSM 44258', 'infraspecificNames': {'strain': 'DSM 44258'}}: 1
+  {'taxId': 1120936, 'organismName': 'Actinomadura atramentaria DSM 43919', 'infraspecificNames': {'strain': 'SF2197'}}: 1
+  {'taxId': 1120937, 'organismName': 'Actinomadura rifamycini DSM 43936', 'infraspecificNames': {'strain': 'DSM 43936'}}: 1
+  {'taxId': 1122998, 'organismName': 'Acidipropionibacterium thoenii DSM 20276', 'infraspecificNames': {'strain': 'DSM 20276'}}: 1
+  {'taxId': 1191460, 'organismName': 'Acinetobacter venetianus RAG-1 = CIP 110063', 'infraspecificNames': {'strain': 'CIP 110063'}}: 1
+  {'taxId': 1217648, 'organismName': 'Acinetobacter beijerinckii CIP 110307', 'infraspecificNames': {'strain': 'CIP 110307'}}: 1
+  {'taxId': 1217662, 'organismName': 'Acinetobacter johnsonii ANC 3681', 'infraspecificNames': {'strain': 'ANC 3681'}}: 1
+  {'taxId': 1217715, 'organismName': 'Acinetobacter bohemicus ANC 3994', 'infraspecificNames': {'strain': 'ANC 3994'}}: 1
+  {'taxId': 1217716, 'organismName': 'Acinetobacter ursingii NIPH 706', 'infraspecificNames': {'strain': 'NIPH 706'}}: 1
+  {'taxId': 1220559, 'organismName': 'Actinomadura hibisca NBRC 15177', 'infraspecificNames': {'strain': 'NBRC 15177'}}: 1
+  {'taxId': 1220563, 'organismName': 'Actinomadura latina NBRC 106108', 'infraspecificNames': {'strain': 'NBRC 106108'}}: 1
+  {'taxId': 1220564, 'organismName': 'Actinomadura macra NBRC 14102', 'infraspecificNames': {'strain': 'NBRC 14102'}}: 1
+  {'taxId': 1220567, 'organismName': 'Actinomadura rubrobrunea NBRC 15275', 'infraspecificNames': {'strain': 'NBRC 15275'}}: 1
+  {'taxId': 1231350, 'organismName': 'Acidisphaera rubrifaciens HS-AP3', 'infraspecificNames': {'strain': 'HS-AP3'}}: 1
+  {'taxId': 1278304, 'organismName': 'Acholeplasma granularum ATCC 19168', 'infraspecificNames': {'strain': 'ATCC 19168'}}: 1
+  {'taxId': 1278308, 'organismName': '[Zimmermannella] faecalis ATCC 13722', 'infraspecificNames': {'strain': 'B187'}}: 1
+  {'taxId': 1280514, 'organismName': 'Acidithrix ferrooxidans', 'infraspecificNames': {'strain': 'PY-F3'}}: 1
+  {'taxId': 1324350, 'organismName': 'Acinetobacter equi', 'infraspecificNames': {'strain': '114'}}: 1
+  {'taxId': 1341683, 'organismName': 'Acinetobacter brisouii CIP 110357', 'infraspecificNames': {'strain': 'CIP 110357'}}: 1
+  {'taxId': 134534, 'organismName': 'Acinetobacter gyllenbergii', 'infraspecificNames': {'strain': 'FMP01'}}: 1
+  {'taxId': 1349786, 'organismName': '[Zimmermannella] alba NBRC 15616', 'infraspecificNames': {'strain': 'NBRC 15616'}}: 1
+  {'taxId': 1349787, 'organismName': '[Zimmermannella] bifida NBRC 103089', 'infraspecificNames': {'strain': 'NBRC 103089'}}: 1
+  {'taxId': 1353941, 'organismName': 'Acinetobacter harbinensis', 'infraspecificNames': {'strain': 'HITLi 7'}}: 1
+  {'taxId': 1392540, 'organismName': 'Acinetobacter nectaris CIP 110549', 'infraspecificNames': {'strain': 'CIP 110549'}}: 1
+  {'taxId': 1399798, 'organismName': 'Actinomadura oligospora ATCC 43269', 'infraspecificNames': {'strain': 'ATCC 43269'}}: 1
+  {'taxId': 1408415, 'organismName': 'Acholeplasma equifetale ATCC 29724', 'infraspecificNames': {'strain': 'ATCC 29724'}}: 1
+  {'taxId': 1408418, 'organismName': 'Acidiphilium angustum ATCC 35903', 'infraspecificNames': {'strain': 'ATCC 35903'}}: 1
+  {'taxId': 1408419, 'organismName': 'Acidocella facilis ATCC 35904', 'infraspecificNames': {'strain': 'ATCC 35904'}}: 1
+  {'taxId': 1410651, 'organismName': '[Clostridium] aerotolerans DSM 5434', 'infraspecificNames': {'strain': 'DSM 5434'}}: 1
+  {'taxId': 1443941, 'organismName': 'Acinetobacter gandensis', 'infraspecificNames': {'strain': 'ANC 4275'}}: 1
+  {'taxId': 1449355, 'organismName': 'Actinacidiphila yeochonensis CN732', 'infraspecificNames': {'strain': 'CN732'}}: 1
+  {'taxId': 1454373, 'organismName': 'Actibacterium mucosum KCTC 23349', 'infraspecificNames': {'strain': 'KCTC 23349'}}: 1
+  {'taxId': 1461693, 'organismName': 'Actibacterium atlanticum', 'infraspecificNames': {'strain': '22II-S11-z10'}}: 1
+  {'taxId': 146474, 'organismName': 'Acetobacter orientalis', 'infraspecificNames': {'strain': '21F-2'}}: 1
+  {'taxId': 146475, 'organismName': 'Acetobacter cibinongensis', 'infraspecificNames': {'strain': '4H-1'}}: 1
+  {'taxId': 146476, 'organismName': 'Acetobacter syzygii', 'infraspecificNames': {'strain': '9H-2'}}: 1
+  {'taxId': 1469607, 'organismName': '[Scytonema hofmanni] UTEX 2349', 'infraspecificNames': {'strain': 'UTEX 2349'}}: 1
+  {'taxId': 1511, 'organismName': 'Acetoanaerobium sticklandii', 'infraspecificNames': {'strain': 'DSM 519'}}: 1
+  {'taxId': 160660, 'organismName': 'Acidihalobacter prosperus', 'infraspecificNames': {'strain': 'DSM 5130'}}: 1
+  {'taxId': 163359, 'organismName': 'Acidiferrobacter thiooxydans', 'infraspecificNames': {'strain': 'ZJ'}}: 1
+  {'taxId': 1748, 'organismName': 'Acidipropionibacterium acidipropionici', 'infraspecificNames': {'strain': 'CGMCC 1.2230'}}: 1
+  {'taxId': 1766203, 'organismName': 'Abyssisolibacter fermentans', 'infraspecificNames': {'strain': 'MCWD3'}}: 1
+  {'taxId': 1776740, 'organismName': 'Acinetobacter modestus', 'infraspecificNames': {'strain': 'NIPH 236'}}: 1
+  {'taxId': 1776741, 'organismName': 'Acinetobacter proteolyticus', 'infraspecificNames': {'strain': 'NIPH 809'}}: 1
+  {'taxId': 178900, 'organismName': 'Acetobacter cerevisiae', 'infraspecificNames': {'strain': 'LMG 1625'}}: 1
+  {'taxId': 178901, 'organismName': 'Acetobacter malorum', 'infraspecificNames': {'strain': 'LMG 1746'}}: 1
+  {'taxId': 1789224, 'organismName': 'Acinetobacter larvae', 'infraspecificNames': {'strain': 'BRTC-1'}}: 1
+  {'taxId': 1806892, 'organismName': 'Acinetobacter pragensis', 'infraspecificNames': {'strain': 'ANC 4149'}}: 1
+  {'taxId': 1871111, 'organismName': 'Acinetobacter defluvii', 'infraspecificNames': {'strain': 'WCHA30'}}: 1
+  {'taxId': 1879050, 'organismName': 'Acinetobacter wuhouensis', 'infraspecificNames': {'strain': 'WCHA60'}}: 1
+  {'taxId': 1891224, 'organismName': 'Acinetobacter celticus', 'infraspecificNames': {'strain': 'ANC 4603'}}: 1
+  {'taxId': 202955, 'organismName': 'Acinetobacter tjernbergiae', 'infraspecificNames': {'strain': 'DSM 14971'}}: 1
+  {'taxId': 203119, 'organismName': 'Acetivibrio thermocellus ATCC 27405', 'infraspecificNames': {'strain': 'ATCC 27405'}}: 1
+  {'taxId': 221988, 'organismName': '[Mannheimia] succiniciproducens MBEL55E', 'infraspecificNames': {'strain': 'MBEL55E'}}: 1
+  {'taxId': 240015, 'organismName': 'Acidobacterium capsulatum ATCC 51196', 'infraspecificNames': {'strain': 'ATCC 51196'}}: 1
+  {'taxId': 243159, 'organismName': 'Acidithiobacillus ferrooxidans ATCC 23270', 'infraspecificNames': {'strain': 'ATCC 23270'}}: 1
+  {'taxId': 2792603, 'organismName': 'Acidihalobacter aeolianus', 'infraspecificNames': {'strain': 'V6'}}: 1
+  {'taxId': 280145, 'organismName': 'Acinetobacter colistiniresistens', 'infraspecificNames': {'strain': 'NIPH 2036'}}: 1
+  {'taxId': 290052, 'organismName': 'Acetivibrio ethanolgignens', 'infraspecificNames': {'strain': 'ACET-33324'}}: 1
+  {'taxId': 329726, 'organismName': 'Acaryochloris marina MBIC11017', 'infraspecificNames': {'strain': 'MBIC11017'}}: 1
+  {'taxId': 339671, 'organismName': 'Actinobacillus succinogenes 130Z', 'infraspecificNames': {'strain': '130Z'}}: 1
+  {'taxId': 340345, 'organismName': 'Actinoalloteichus hymeniacidonis', 'infraspecificNames': {'strain': 'HPA177'}}: 1
+  {'taxId': 351607, 'organismName': 'Acidothermus cellulolyticus 11B', 'infraspecificNames': {'strain': '11B; ATCC 43068'}}: 1
+  {'taxId': 421052, 'organismName': 'Acinetobacter rudis CIP 110305', 'infraspecificNames': {'strain': 'CIP 110305'}}: 1
+  {'taxId': 436717, 'organismName': 'Acinetobacter oleivorans DR1', 'infraspecificNames': {'strain': 'DR1'}}: 1
+  {'taxId': 439292, 'organismName': '[Bacillus] selenitireducens MLS10', 'infraspecificNames': {'strain': 'MLS10'}}: 1
+  {'taxId': 441768, 'organismName': 'Acholeplasma laidlawii PG-8A', 'infraspecificNames': {'strain': 'PG-8A'}}: 1
+  {'taxId': 446692, 'organismName': 'Acetobacter senegalensis', 'infraspecificNames': {'strain': '108B'}}: 1
+  {'taxId': 477184, 'organismName': 'Achromobacter arsenitoxydans SY8', 'infraspecificNames': {'strain': 'SY8'}}: 1
+  {'taxId': 509191, 'organismName': 'Acetivibrio cellulolyticus CD2', 'infraspecificNames': {'strain': 'CD2'}}: 1
+  {'taxId': 525909, 'organismName': 'Acidimicrobium ferrooxidans DSM 10331', 'infraspecificNames': {'strain': 'DSM 10331'}}: 1
+  {'taxId': 535289, 'organismName': '[Acidovorax] ebreus TPSY', 'infraspecificNames': {'strain': 'TPSY'}}: 1
+  {'taxId': 551115, 'organismName': "'Nostoc azollae' 0708", 'infraspecificNames': {'strain': '0708'}}: 1
+  {'taxId': 561175, 'organismName': 'Actinomadura flavalba DSM 45200', 'infraspecificNames': {'strain': 'DSM 45200'}}: 1
+  {'taxId': 574087, 'organismName': 'Acetohalobium arabaticum DSM 5501', 'infraspecificNames': {'strain': 'DSM 5501'}}: 1
+  {'taxId': 591001, 'organismName': 'Acidaminococcus fermentans DSM 20731', 'infraspecificNames': {'strain': 'DSM 20731'}}: 1
+  {'taxId': 592015, 'organismName': 'Acetomicrobium hydrogeniformans ATCC BAA-1850', 'infraspecificNames': {'strain': 'OS1'}}: 1
+  {'taxId': 610130, 'organismName': '[Clostridium] saccharolyticum WM1', 'infraspecificNames': {'strain': 'WM1'}}: 1
+  {'taxId': 61635, 'organismName': 'Acholeplasma brassicae', 'infraspecificNames': {'strain': 'O502'}}: 1
+  {'taxId': 62977, 'organismName': 'Acinetobacter baylyi ADP1', 'infraspecificNames': {'strain': 'ADP1'}}: 1
+  {'taxId': 637911, 'organismName': 'Actinobacillus minor NM305', 'infraspecificNames': {'strain': 'NM305'}}: 1
+  {'taxId': 701347, 'organismName': '[Enterobacter] lignolyticus SCF1', 'infraspecificNames': {'strain': 'SCF1'}}: 1
+  {'taxId': 70347, 'organismName': 'Acinetobacter higginsii', 'infraspecificNames': {'strain': 'ANC 3880'}}: 1
+  {'taxId': 720554, 'organismName': 'Acetivibrio clariflavus DSM 19732', 'infraspecificNames': {'strain': 'DSM 19732'}}: 1
+  {'taxId': 730, 'organismName': '[Haemophilus] ducreyi', 'infraspecificNames': {'strain': 'VAN2'}}: 1
+  {'taxId': 743972, 'organismName': 'Actinobacillus suis ATCC 33415', 'infraspecificNames': {'strain': 'ATCC 33415'}}: 1
+  {'taxId': 865861, 'organismName': '[Clostridium] ultunense DSM 10521', 'infraspecificNames': {'strain': 'DSM 10521'}}: 1
+  {'taxId': 871585, 'organismName': 'Acinetobacter pittii PHEA-2', 'infraspecificNames': {'strain': 'PHEA-2'}}: 1
+  {'taxId': 883066, 'organismName': 'Actinobaculum massiliense ACS-171-V-Col2', 'infraspecificNames': {'strain': 'ACS-171-V-Col2'}}: 1
+  {'taxId': 887324, 'organismName': 'Actinobacillus ureae ATCC 25976', 'infraspecificNames': {'strain': 'ATCC 25976'}}: 1
+  {'taxId': 926570, 'organismName': 'Acidiphilium multivorum AIU301', 'infraspecificNames': {'strain': 'AIU301'}}: 1
+  {'taxId': 931626, 'organismName': 'Acetobacterium woodii DSM 1030', 'infraspecificNames': {'strain': 'DSM 1030'}}: 1
+  {'taxId': 990288, 'organismName': 'Acidithiobacillus caldus SM-1', 'infraspecificNames': {'strain': 'SM-1'}}: 1
+  {'taxId': 999386, 'organismName': 'Acidovorax radicis N35', 'infraspecificNames': {'strain': 'N35'}}: 1
