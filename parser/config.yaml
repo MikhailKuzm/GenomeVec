@@ -3,12 +3,16 @@
 # Путь к NCBI Datasets CLI (datasets.exe на Windows). Если не задан — ищется в PATH.
 datasets_cli_path: "parser/tools/datasets.exe"
 
-# Таксон NCBI: 2 = Bacteria (прокариоты)
+# Таксон NCBI: 2 = Bacteria (прокариоты). Используется, если не задан taxon_name_for_download.
 taxon_id: 2
 taxon_name: "bacteria"
 
+# Скачивание по родовому/видовому имени (например Escherichia, Bacillus subtilis).  
+# Можно указать список: ["Escherichia coli", "Bacillus subtilis"] — тогда для каждого таксона скачается до max_genomes_to_download геномов.
+taxon_name_for_download: "Escherichia coli" # или список: ["Escherichia coli", "Bacillus subtilis"]
+
 # Только референсные геномы
-reference_only: true
+reference_only: false
 
 # Источник сборок: RefSeq (GCF_) или GenBank (GCA_) или all
 assembly_source: "RefSeq"

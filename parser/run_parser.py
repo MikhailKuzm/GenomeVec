@@ -154,8 +154,9 @@ def _sanitize_filename_part(s: str, max_len: int = 120) -> str:
     return out.strip("_") or "unknown"
 
 
-def run_datasets_download(config: dict) -> Path:
-    """Скачивает пакет геномов: либо по таксону (полный/ограниченный), либо по списку accession."""
+def run_datasets_download(config: dict) -> Path | list[Path]:
+    """Скачивает пакет геномов: либо по таксону (полный/ограниченный), либо по списку accession.
+    Если taxon_name_for_download — список названий, для каждого скачивается до max_genomes_to_download геномов."""
     import zipfile
 
     download_dir = PROJECT_ROOT / config["paths"]["download_dir"]
@@ -163,7 +164,15 @@ def run_datasets_download(config: dict) -> Path:
     zip_path = download_dir / zip_name
     download_dir.mkdir(parents=True, exist_ok=True)
 
-    taxon = config.get("taxon_id", 2)
+    # Таксон: одно имя, список имён или числовой ID
+    taxon_raw = config.get("taxon_name_for_download")
+    if isinstance(taxon_raw, list):
+        taxon_list = [str(x).strip() for x in taxon_raw if str(x).strip()]
+    elif taxon_raw:
+        taxon_list = [str(taxon_raw).strip()]
+    else:
+        taxon_list = []
+
     ref_only = config.get("reference_only", True)
     include = config.get("include", "genome")
     assembly_source = config.get("assembly_source", "RefSeq")
@@ -175,61 +184,67 @@ def run_datasets_download(config: dict) -> Path:
     datasets_exe = _resolve_datasets_exe(config)
 
     if max_to_download is not None and max_to_download > 0:
-        # Режим ограниченной загрузки: сначала только метаданные, затем N геномов по accession
-        metadata_zip = download_dir / "ncbi_metadata_temp.zip"
-        cmd_meta = [
-            datasets_exe, "download", "genome", "taxon", str(taxon),
-            "--include", "none", "--filename", str(metadata_zip),
-        ]
-        if ref_only:
-            cmd_meta.append("--reference")
-        if assembly_source and assembly_source.lower() != "all":
-            cmd_meta.extend(["--assembly-source", assembly_source])
-        print("Загрузка списка геномов (метаданные):", " ".join(cmd_meta))
-        result = _run_datasets_cmd(cmd_meta, config, str(PROJECT_ROOT), env)
-        if result.returncode != 0:
-            raise RuntimeError(f"Загрузка метаданных завершилась с кодом {result.returncode}")
-        if not metadata_zip.exists():
-            raise FileNotFoundError("Архив метаданных не создан")
+        # Режим ограниченной загрузки: для каждого таксона — метаданные, затем N геномов по accession
+        all_accessions: list[str] = []
+        taxon_for_cmd = config.get("taxon_id", 2)  # fallback, если список пустой
 
-        # Распаковываем метаданные и читаем accession из отчёта
-        extract_meta = download_dir / "ncbi_meta_extract"
-        if extract_meta.exists():
-            shutil.rmtree(extract_meta)
-        extract_meta.mkdir(parents=True, exist_ok=True)
-        accessions: list[str] = []
-        with zipfile.ZipFile(metadata_zip, "r") as zf:
-            zf.extractall(extract_meta)
-        for report_path in extract_meta.rglob("assembly_data_report.jsonl"):
-            with open(report_path, "r", encoding="utf-8") as f:
-                for line in f:
-                    line = line.strip()
-                    if not line:
-                        continue
-                    try:
-                        obj = json.loads(line)
-                        acc = _get_accession_from_report_line(obj)
-                        if acc and acc not in accessions:
-                            accessions.append(acc)
-                            if len(accessions) >= max_to_download:
-                                break
-                    except (json.JSONDecodeError, TypeError):
-                        continue
-            if len(accessions) >= max_to_download:
-                break
-        try:
-            shutil.rmtree(extract_meta)
-        except OSError:
-            pass
-        metadata_zip.unlink(missing_ok=True)
+        for taxon_name in (taxon_list if taxon_list else [None]):
+            taxon = taxon_name if taxon_name else taxon_for_cmd
+            metadata_zip = download_dir / "ncbi_metadata_temp.zip"
+            cmd_meta = [
+                datasets_exe, "download", "genome", "taxon", str(taxon),
+                "--include", "none", "--filename", str(metadata_zip),
+            ]
+            if ref_only:
+                cmd_meta.append("--reference")
+            if assembly_source and assembly_source.lower() != "all":
+                cmd_meta.extend(["--assembly-source", assembly_source])
+            print("Загрузка списка геномов (метаданные):", " ".join(cmd_meta))
+            result = _run_datasets_cmd(cmd_meta, config, str(PROJECT_ROOT), env)
+            if result.returncode != 0:
+                raise RuntimeError(f"Загрузка метаданных для таксона '{taxon}' завершилась с кодом {result.returncode}")
+            if not metadata_zip.exists():
+                raise FileNotFoundError("Архив метаданных не создан")
 
-        if not accessions:
+            extract_meta = download_dir / "ncbi_meta_extract"
+            if extract_meta.exists():
+                shutil.rmtree(extract_meta)
+            extract_meta.mkdir(parents=True, exist_ok=True)
+            with zipfile.ZipFile(metadata_zip, "r") as zf:
+                zf.extractall(extract_meta)
+
+            n_for_this_taxon = 0
+            for report_path in extract_meta.rglob("assembly_data_report.jsonl"):
+                with open(report_path, "r", encoding="utf-8") as f:
+                    for line in f:
+                        line = line.strip()
+                        if not line:
+                            continue
+                        try:
+                            obj = json.loads(line)
+                            acc = _get_accession_from_report_line(obj)
+                            if acc and acc not in all_accessions:
+                                all_accessions.append(acc)
+                                n_for_this_taxon += 1
+                                if n_for_this_taxon >= max_to_download:
+                                    break
+                        except (json.JSONDecodeError, TypeError):
+                            continue
+                if n_for_this_taxon >= max_to_download:
+                    break
+            print(f"  Таксон '{taxon}': найдено {n_for_this_taxon} геномов")
+            try:
+                shutil.rmtree(extract_meta)
+            except OSError:
+                pass
+            metadata_zip.unlink(missing_ok=True)
+
+        if not all_accessions:
             raise RuntimeError("В метаданных не найдено ни одного accession")
 
-        accessions = accessions[:max_to_download]
         list_file = download_dir / "accession_list.txt"
-        list_file.write_text("\n".join(accessions), encoding="utf-8")
-        print(f"Скачивание {len(accessions)} геномов по списку accession...")
+        list_file.write_text("\n".join(all_accessions), encoding="utf-8")
+        print(f"Скачивание {len(all_accessions)} геномов по списку accession...")
         cmd_acc = [
             datasets_exe, "download", "genome", "accession",
             "--inputfile", str(list_file),
@@ -242,19 +257,43 @@ def run_datasets_download(config: dict) -> Path:
         if result.returncode != 0:
             raise RuntimeError(f"datasets download accession завершился с кодом {result.returncode}")
     else:
-        # Полная загрузка по таксону
-        cmd = [
-            datasets_exe, "download", "genome", "taxon", str(taxon),
-            "--include", include, "--filename", str(zip_path),
-        ]
-        if ref_only:
-            cmd.append("--reference")
-        if assembly_source and assembly_source.lower() != "all":
-            cmd.extend(["--assembly-source", assembly_source])
-        print("Запуск:", " ".join(cmd))
-        result = _run_datasets_cmd(cmd, config, str(PROJECT_ROOT), env)
-        if result.returncode != 0:
-            raise RuntimeError(f"datasets download завершился с кодом {result.returncode}")
+        # Полная загрузка по таксону (один таксон или несколько — по очереди, несколько zip'ов)
+        if not taxon_list:
+            taxon = config.get("taxon_id", 2)
+            taxon_list = [None]  # один проход с taxon_id
+        zips: list[Path] = []
+        for taxon_name in taxon_list:
+            taxon = taxon_name if taxon_name else config.get("taxon_id", 2)
+            current_zip = zip_path
+            if len(taxon_list) > 1 and taxon_name:
+                base = zip_path.stem + "_" + _sanitize_filename_part(taxon_name)
+                current_zip = download_dir / (base + zip_path.suffix)
+            cmd = [
+                datasets_exe, "download", "genome", "taxon", str(taxon),
+                "--include", include, "--filename", str(current_zip),
+            ]
+            if ref_only:
+                cmd.append("--reference")
+            if assembly_source and assembly_source.lower() != "all":
+                cmd.extend(["--assembly-source", assembly_source])
+            print("Запуск:", " ".join(cmd))
+            result = _run_datasets_cmd(cmd, config, str(PROJECT_ROOT), env)
+            if result.returncode != 0:
+                raise RuntimeError(f"datasets download для таксона '{taxon}' завершился с кодом {result.returncode}")
+            if current_zip.exists():
+                zips.append(current_zip)
+        if len(zips) == 1:
+            zip_path = zips[0]
+        else:
+            if not zips:
+                raise FileNotFoundError("Ни один архив не был создан")
+            # Вернём список zip'ов для извлечения по очереди
+            if not zip_path.exists() and zips:
+                zip_path = zips[0]
+            for z in zips:
+                if not z.exists():
+                    raise FileNotFoundError(f"Архив не создан: {z}")
+            return zips
 
     if not zip_path.exists():
         raise FileNotFoundError(f"Архив не создан: {zip_path}")
@@ -384,10 +423,17 @@ def write_statistic_log(config: dict, copied: list[Path], phenotype_counts: dict
 def main() -> int:
     os.chdir(PROJECT_ROOT)
     config = load_config()
-    zip_path = run_datasets_download(config)
-    copied, phenotype_counts = extract_fasta_and_collect_stats(zip_path, config)
-    write_statistic_log(config, copied, phenotype_counts)
-    print(f"Скопировано FASTA: {len(copied)} в {config['paths']['fasta_dir']}")
+    zip_result = run_datasets_download(config)
+    zip_paths: list[Path] = [zip_result] if isinstance(zip_result, Path) else zip_result
+    all_copied: list[Path] = []
+    all_phenotype_counts: dict[str, int] = defaultdict(int)
+    for zp in zip_paths:
+        copied, phenotype_counts = extract_fasta_and_collect_stats(zp, config)
+        all_copied.extend(copied)
+        for org, count in phenotype_counts.items():
+            all_phenotype_counts[org] += count
+    write_statistic_log(config, all_copied, all_phenotype_counts)
+    print(f"Скопировано FASTA: {len(all_copied)} в {config['paths']['fasta_dir']}")
     return 0
 
 

@@ -28,6 +28,8 @@ datasets --version
 
 Редактируйте `parser/config.yaml`: таксон, пути, лимиты. Если CLI установлен не в PATH — задайте `datasets_cli_path` (путь к `datasets.exe`).
 
+- **Скачивание по роду или виду:** задайте `taxon_name_for_download: "Escherichia"` или `"Bacillus subtilis"` — тогда в команду подставится это имя вместо числового `taxon_id` (2 = все бактерии). Удобно качать только один род.
+
 ## Запуск
 
 Из корня проекта:
