@@ -1,0 +1,7 @@
+# Зависимости для inference/DNABERT2
+# Python 3.8+
+
+torch>=2.0
+transformers>=4.28
+tqdm>=4.60
+einops

@@ -1,81 +1,180 @@
 === Статистика парсера референсных геномов прокариот (NCBI Datasets) ===
 
-Общее число FASTA файлов: 100
-Количество фенотипов (организмов/видов): 96
+Общее число FASTA файлов: 250
+Количество фенотипов (организмов/видов): 242
 
 --- Количество геномов по фенотипам (организмам) ---
 
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'strain': 'ATCC BAA1680'}}: 5
   {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'ST2747'}}: 3
   {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'ST540'}}: 3
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'isolate': '1764', 'strain': 'SA0521'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'isolate': '1MPS', 'strain': 'SA0518'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'isolate': '63', 'strain': 'SA0519'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'isolate': 'RN1', 'strain': 'HG003'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'isolate': 'RN6607', 'strain': '502A'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'isolate': 'abscess/wound isolate', 'strain': 'UA-S391_USA300'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'strain': '2395 USA500'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'strain': '327'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'strain': '337'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'strain': '346'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'strain': 'A187'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'strain': 'A69'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'strain': 'A71'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'strain': 'ATCC 25923'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'strain': 'Bmb9393'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'strain': 'CDC 73-57501'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'strain': 'FDAARGOS_5'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'strain': 'FORC_001'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'strain': 'Gv69'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'strain': 'H-EMRSA-15'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'strain': 'MM25'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'strain': 'MM61'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'strain': 'MM66'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'strain': 'MM66-4'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'strain': 'MM66RVI-4'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'strain': 'MRSA_E1'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'strain': 'MRSA_P1'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'strain': 'MRSA_P10'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'strain': 'MRSA_P11'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'strain': 'MRSA_P12'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'strain': 'MRSA_P13'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'strain': 'MRSA_P14'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'strain': 'MRSA_P2'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'strain': 'MRSA_P3'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'strain': 'MRSA_P4'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'strain': 'MRSA_P5'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'strain': 'MRSA_P6'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'strain': 'MRSA_P7'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'strain': 'MRSA_P8'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'strain': 'MRSA_P9'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'strain': 'MRSA_S1'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'strain': 'MRSA_S2'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'strain': 'MRSA_S3'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'strain': 'NGS-ED-1006'}}: 1
+  {'taxId': 1280, 'organismName': 'Staphylococcus aureus', 'infraspecificNames': {'strain': 'UAMS-1'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'isolate': '5Z52R', 'strain': 'CH2079'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'isolate': 'PCKMO', 'strain': 'NP7066'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'isolate': 'UNUOJ', 'strain': 'ND6100'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': '0106+11154'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': '0107+17127'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': '172_SPNE'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': '19F'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': '312942'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': '325_SPNE'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': '34'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': '358_SPNE'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': '6B'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': '80_SPNE'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': 'ASVL_JC_0001'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': 'BHN369'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': 'CU_SPNE1_05'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': 'CU_SPNE32_06'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': 'NT'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': 'R34-3202'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': 'SC_0381'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': 'SC_0391'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': 'SC_2441'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': 'SC_3511'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': 'SC_3526'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': 'SMRU1326'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': 'SMRU1337'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': 'SMRU2295'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': 'SMRU2443'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': 'SMRU2502'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': 'SMRU2599'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': 'SMRU2624'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': 'SMRU2704'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': 'SMRU2863'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': 'SMRU2866'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': 'SMRU2962'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': 'SMRU3019'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': 'SMRU3040'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': 'SMRU3069'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': 'SMRU554'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': 'SMRU555'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': 'SMRU556'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': 'SMRU557'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': 'SMRU558'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': 'SMRU559'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': 'SMRU560'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': 'SMRU561'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': 'SMRU562'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': 'SMRU563'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': 'SMRU894'}}: 1
+  {'taxId': 1313, 'organismName': 'Streptococcus pneumoniae', 'infraspecificNames': {'strain': 'SMRU955'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': '2_1_26'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'ATCC 33988'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'AZPAE14840'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'AZPAE14841'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'AZPAE14842'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'AZPAE14843'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'AZPAE14844'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'AZPAE14845'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'AZPAE14846'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'AZPAE14847'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'AZPAE14848'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'AZPAE14850'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'AZPAE14851'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'AZPAE14852'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'AZPAE14853'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'AZPAE14855'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'AZPAE14856'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'AZPAE14857'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'AZPAE14858'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'AZPAE14859'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'AZPAE14860'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'AZPAE14861'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'AZPAE14862'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'AZPAE14863'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'AZPAE14864'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'AZPAE14865'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'AZPAE14866'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'AZPAE14867'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'AZPAE14909'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'AZPAE14910'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'AZPAE14915'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'AZPAE14918'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'AZPAE14919'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'AZPAE14929'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'AZPAE15035'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'AZPAE15036'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'AZPAE15037'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'AZPAE15038'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'AZPAE15049'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'CCBH4851'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'JMM'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'LNU-E-001'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'MRSN18971'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'PAG'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'PA_ST235'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'PDR'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'PS3'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'PSE305'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'PUPa3'}}: 1
+  {'taxId': 287, 'organismName': 'Pseudomonas aeruginosa', 'infraspecificNames': {'strain': 'YS-1p'}}: 1
   {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'isolate': 'IEH71520', 'strain': 'O25b-ST131'}}: 1
   {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': '2009-46'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': '2011EL-1369-1'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': '2011EL-1370-2'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': '2011EL-1497-2'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': '2013EL-1320-c5'}}: 1
   {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': '3_2_53FAA'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': '77.3025.33'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': '77300095'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': '77300132'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': '77302533'}}: 1
   {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': '97-3250'}}: 1
   {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'D6-117_07.11'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'DH5a'}}: 1
   {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'E455'}}: 1
   {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'E455L'}}: 1
   {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'EC1'}}: 1
   {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'EC2'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'FHI1'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'FHI101'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'FHI13'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'FHI16'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'FHI17'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'FHI2'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'FHI22'}}: 1
   {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'FHI3'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'FHI31'}}: 1
   {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'FHI32'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'FHI35'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'FHI36'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'FHI37'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'FHI38'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'FHI39'}}: 1
   {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'FHI41'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'FHI45'}}: 1
   {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'FHI46'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'FHI47'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'FHI49'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'FHI5'}}: 1
   {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'FHI50'}}: 1
   {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'FHI51'}}: 1
   {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'FHI52'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'FHI53'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'FHI54'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'FHI56'}}: 1
   {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'FHI60'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'FHI61'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'FHI64'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'FHI67'}}: 1
   {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'FHI69'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'FHI73'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'FHI77'}}: 1
   {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'FHI78'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'FHI81'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'FHI84'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'FHI86'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'FHI88'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'FHI91'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'FHI95'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'FHI96'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'G1/2'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'G4/9'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'G5'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'G6/7'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'G8'}}: 1
   {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'H2.185'}}: 1
   {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'IMT2125'}}: 1
   {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'MI10-01'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'MRSN17749'}}: 1
   {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'PMK-5'}}: 1
   {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'S5274'}}: 1
   {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'S6400'}}: 1
@@ -86,8 +185,6 @@
   {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'S7380'}}: 1
   {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'S7438'}}: 1
   {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'SCB34'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'StOlav143'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'StOlav172'}}: 1
   {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'UCD_JA03'}}: 1
   {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'UCD_JA03_pb'}}: 1
   {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'UCD_JA17'}}: 1
@@ -99,5 +196,54 @@
   {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'UCD_JA65_pb'}}: 1
   {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'UCD_JA69'}}: 1
   {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'UCD_JA69_pb'}}: 1
-  {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'VKPM B-10182'}}: 1
   {'taxId': 562, 'organismName': 'Escherichia coli', 'infraspecificNames': {'strain': 'W25K'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '1157-74'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '1311-69'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '133-73'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '1421-77'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '2010AA-142'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '2010AA-143'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '2010AA-144'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '2010AA-145'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '2010AA-146'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '2010AA-147'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '2010AA-148'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '2010AA-150'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '2010AA-151'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '2012EL-2176'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '2012Env-131'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '2012Env-2'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '2012Env-25'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '2012Env-32'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '2012Env-326'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '2012Env-9'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '2012Env-90'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '2012Env-92'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '2012Env-94'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '2012HC-07'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '2012HC-08'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '2012HC-11'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '2012HC-15'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '2012HC-16'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '2012HC-17'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '2012HC-18'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '2012HC-19'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '2012HC-21'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '2012HC-22'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '2012HC-24'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '2012HC-25'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '2012HC-31'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '2012HC-32'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '2012HC-33'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '2012HC-34'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '2012HC-35'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '234-93'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '254-93'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '5473-62'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '571-88'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '63-93 (MO45)'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '8-76'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '981-75'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': '984-81'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': 'NIH41'}}: 1
+  {'taxId': 666, 'organismName': 'Vibrio cholerae', 'infraspecificNames': {'strain': 'RND81'}}: 1

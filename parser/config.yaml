@@ -9,7 +9,7 @@ taxon_name: "bacteria"
 
 # Скачивание по родовому/видовому имени (например Escherichia, Bacillus subtilis).  
 # Можно указать список: ["Escherichia coli", "Bacillus subtilis"] — тогда для каждого таксона скачается до max_genomes_to_download геномов.
-taxon_name_for_download: "Escherichia coli" # или список: ["Escherichia coli", "Bacillus subtilis"]
+taxon_name_for_download: ["Escherichia coli", "Pseudomonas aeruginosa", "Vibrio cholerae", "Streptococcus pneumoniae", "Staphylococcus aureus"] # или список: ["Escherichia coli", "Bacillus subtilis"]
 
 # Только референсные геномы
 reference_only: false
@@ -36,6 +36,6 @@ paths:
   statistic_log: "genoms/statistic.log"
 
 # Лимиты
-max_genomes_to_download: 100   # Сколько геномов скачать
+max_genomes_to_download: 50   # Сколько геномов скачать
 # max_genomes: 10             # сколько FASTA копировать в fasta_dir (null = все).
 # FASTA файлы сохраняются с маркировкой по фенотипу: «Организм_Accession_genomic.fna».
