@@ -68,11 +68,12 @@ def _run_datasets_cmd(cmd: list[str], config: dict, cwd: str, env: dict) -> subp
 
 
 def _resolve_datasets_exe(config: dict) -> str:
-    """Возвращает путь к datasets.exe из конфига или PATH."""
+    """Возвращает путь к исполняемому файлу datasets из конфига или PATH (Linux: datasets, Windows: datasets.exe)."""
     datasets_exe = config.get("datasets_cli_path")
     if datasets_exe:
         datasets_exe = PROJECT_ROOT / datasets_exe
         if sys.platform == "win32":
+            # Windows: ищем datasets.exe
             if datasets_exe.is_dir():
                 candidates = [
                     datasets_exe / "datasets.exe",
@@ -115,11 +116,31 @@ def _resolve_datasets_exe(config: dict) -> str:
                 exe_path = datasets_exe.with_suffix(".exe")
                 if exe_path.is_file():
                     datasets_exe = exe_path
+        else:
+            # Linux и др.: ищем бинарник datasets (без .exe)
+            if datasets_exe.is_dir():
+                candidates = [
+                    datasets_exe / "datasets",
+                    datasets_exe / "bin" / "datasets",
+                ]
+                for sub in datasets_exe.iterdir():
+                    if sub.is_dir():
+                        candidates.append(sub / "datasets")
+                        candidates.append(sub / "bin" / "datasets")
+                for candidate in candidates:
+                    if candidate.is_file() and os.access(candidate, os.X_OK):
+                        datasets_exe = candidate
+                        break
+                else:
+                    raise FileNotFoundError(
+                        f"В config.yaml указана папка {datasets_exe}, но в ней не найден исполняемый файл 'datasets'.\n"
+                        "Укажите путь к бинарнику datasets (например: parser/tools/datasets)."
+                    )
         if not datasets_exe.is_file():
             raise FileNotFoundError(
                 f"В config.yaml указан datasets_cli_path, но файл не найден: {datasets_exe}\n"
-                "Скачайте windows-amd64.cli.package.zip, распакуйте и укажите путь к datasets.exe "
-                "(например: parser/tools/datasets.exe или parser/tools/папка_из_архива/datasets.exe)."
+                "Linux: установите ncbi-datasets-cli (conda/pip) или укажите путь к бинарнику 'datasets'.\n"
+                "Windows: скачайте windows-amd64.cli.package.zip и укажите путь к datasets.exe."
             )
         return str(datasets_exe)
     exe = shutil.which("datasets")
@@ -127,9 +148,9 @@ def _resolve_datasets_exe(config: dict) -> str:
         raise FileNotFoundError(
             "Не найден исполняемый файл 'datasets' (NCBI Datasets CLI).\n"
             "Варианты:\n"
-            "  1) Установить в PATH: conda install -c conda-forge ncbi-datasets-cli\n"
+            "  1) Установить в PATH: conda install -c conda-forge ncbi-datasets-cli (Linux)\n"
             "  2) Скачать с https://github.com/ncbi/datasets/releases и в config.yaml\n"
-            "     указать путь к exe: datasets_cli_path: \"parser/tools/datasets.exe\""
+            "     указать путь: datasets_cli_path: \"parser/tools/datasets\" (Linux) или .../datasets.exe (Windows)"
         )
     return exe
 

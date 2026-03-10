@@ -36,6 +36,6 @@ paths:
   statistic_log: "genoms/statistic.log"
 
 # Лимиты
-max_genomes_to_download: 50   # Сколько геномов скачать
+max_genomes_to_download: 10   # Сколько геномов скачать
 # max_genomes: 10             # сколько FASTA копировать в fasta_dir (null = все).
 # FASTA файлы сохраняются с маркировкой по фенотипу: «Организм_Accession_genomic.fna».

@@ -15,3 +15,9 @@ venv/
 .vscode/
 *.swp
 *.swo
+
+*.pt
+tmp.py
+nohup.out
+*.txt
+*.log

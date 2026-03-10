@@ -1,0 +1,13 @@
+architecture:
+  dropout: 0.2
+  hidden: 256
+  input_dim: 768
+  num_classes: 5
+num_parameters: 198149
+test_metrics:
+  accuracy: 1.0
+  num_classes: 5
+  test_samples: 24
+train_samples: 201
+val_samples: 25
+weights: /home/admin1/bioinformatic_lab/GenomeVec/models/fcn_organism.pt
